@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" type="text/css" href="demo16.css">
+</head>
+<body>
+	<h1>实例化多个Vue对象</h1>
+	<div id="vue-app1">
+		<p>{{title}}</p>
+		<span>{{greet}}</span>
+	</div>
+	<div id="vue-app2">
+		<p>{{title}}</p>
+		<span>{{greet}}</span><br>
+		<button v-on:click="changeTitle">ChangeTitle</button>
+	</div>
+</body>
+<script src="demo16.js"></script>
+</html>

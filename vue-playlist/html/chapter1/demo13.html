@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>v-for 条件</h1>
+		<p>循环显示</p>
+		<ul>
+			<li v-for="hobby in hobbys">
+				{{hobby}}
+			</li>
+		</ul>
+		<p>对象显示</p>
+		<ul>
+			<li v-for="user in users">
+				{{user}}
+			</li>
+		</ul>
+		<p>对象值显示</p>
+		<ul>
+			<li v-for="user in users">
+				{{user.name}} - {{user.age}}
+			</li>
+		</ul>
+		<p>第二个参数：下标值</p>
+		<ul>
+			<li v-for="(user,index) in users">
+				{{index}}.{{user.name}} - {{user.age}}
+			</li>
+		</ul>
+		<p>v-for on template</p>
+		<div v-for="(user,index) in users">
+			<h3>{{index}}.{{user.name}}</h3>
+			<p>{{user.age}}</p>
+		</div>
+		<template v-for="(user,index) in users">
+			<h3>{{index}}.{{user.name}}</h3>
+			<p>{{user.age}}</p>
+		</template>
+		<p>对象再循环，获取key-value</p>
+		<template v-for="(user,index) in users">
+			<div v-for="(val,key) in user">
+				<p>{{key}} - {{val}}</p>
+			</div>
+		</template>
+	</div>
+</body>
+<script src="demo13.js"></script>
+</html>

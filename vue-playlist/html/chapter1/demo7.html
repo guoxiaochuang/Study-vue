@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" href="demo7.css">
+</head>
+<body>
+	<div id="vue-app">
+		<h1>Events</h1>
+		<button @click.once="add(1)">涨一岁</button>
+		<button v-on:click="subtract(1)">减一岁</button>
+		<p>My age is {{age}}</p>
+		<div id="canvas" v-on:mousemove="updateXY">
+			{{x}},{{y}} -
+			<span v-on:mousemove="stopMoving">Stop Moving</span>
+			-
+			<span v-on:mousemove.stop="">Stop Moving</span>
+		</div>
+		<a v-on:click.prevent="alert()" href="http://www.baidu.com">new page</a>
+	</div>
+</body>
+<script src="demo7.js"></script>
+</html>

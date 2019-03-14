@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vue.js</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>双向数据绑定 input / select /earatext</h1>
+		<label>姓名</label>
+		<input type="text" name="" ref="name" v-on:keyup="logName">
+		<br>
+		<br>
+		<label>年龄</label>
+		<input type="text" name="" ref="age" v-on:keyup="logAge">
+		<p>我的姓名：{{name}},我的年龄：{{age}}</p>
+		<br>
+		<br>
+		<label>爱好</label>
+		<input type="text" name="" v-model="hobby">
+		<p>我的爱好：{{hobby}}</p>
+	</div>
+</body>
+<script src="demo9.js"></script>
+</html>
