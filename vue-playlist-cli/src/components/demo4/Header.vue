@@ -14,7 +14,7 @@ export default {
   },
   data(){
     return{
-      title1: "Vue.js Demo"
+      title1: "Vue.js Demo4"
     }
   },
   methods: {

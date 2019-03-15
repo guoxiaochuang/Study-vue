@@ -9,7 +9,7 @@ export default {
   name: 'app-header',
   data(){
     return{
-      title: "属性传值：父组件-->子组件"
+      title: "Vue.js demo1-属性传值：父组件-->子组件"
     }
   }
 }

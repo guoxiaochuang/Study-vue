@@ -14,12 +14,13 @@ export default {
   },
   data(){
     return{
-      title1: "Vue.js Demo3"
+      title1: "Vue.js Demo5"
     }
   },
   methods: {
     changeTitle: function(){
-      this.title = "Changed!";
+      // this.title = "Changed!";
+      this.$emit("titleChanged", "子向父组件传值");
     }
   }
 }

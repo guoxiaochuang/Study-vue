@@ -1,25 +1,15 @@
 <template>
-  <header v-on:click="changeTitle">
-      <h1>{{title1}} - {{title}}</h1>
+  <header>
+      <h1>{{title}}</h1>
   </header>
 </template>
 
 <script>
 export default {
   name: 'app-header',
-  props: {
-    title:{
-      type: String
-    }
-  },
   data(){
     return{
-      title1: "Vue.js Demo3"
-    }
-  },
-  methods: {
-    changeTitle: function(){
-      this.title = "Changed!";
+      title: "Vue.js demo6"
     }
   }
 }

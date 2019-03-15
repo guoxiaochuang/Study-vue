@@ -9,7 +9,7 @@ export default {
   name: 'app-header',
   data(){
     return{
-      title: "Vue.js demo"
+      title: "Vue.js demo1"
     }
   }
 }
