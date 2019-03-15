@@ -1,6 +1,6 @@
-# vue-demo
+# vue-playlist-cli
 
-> A Vue.js project
+> Vue基础知识
 
 ## Build Setup
 

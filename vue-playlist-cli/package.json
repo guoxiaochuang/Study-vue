@@ -1,7 +1,7 @@
 {
-  "name": "vue-demo",
+  "name": "vue-playlist-cli",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "Vue基础知识",
   "author": "郭小闯 <guoxiaochuang@boco.com.cn>",
   "private": true,
   "scripts": {
